@@ -1,0 +1,12 @@
+<h1>
+	A Word Counter App
+</h1>
+
+
+<form method="POST" action="{% url 'count' %}">
+	{% csrf_token %}
+	<textarea name="fulltext" id="" cols="30" placeholder="Your text here" rows="10"></textarea>
+	<br/><br/>
+	<input type="submit" value="Count !"/>
+</form>
+

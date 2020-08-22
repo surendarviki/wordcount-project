@@ -1,0 +1,11 @@
+<h1>Counter Result !! </h1>
+<br/><br/>
+<p>Hey, Your text <blockquote>{{ft}}</blockquote> contains <i>{{wc}}</i> Words !!
+<br/><br/>
+
+{% for word,count in wdict%}
+{{word}} - {{count}}<br/>
+{% endfor %}
+
+<a href="{% url 'home' %}">Return Back</a>
+
